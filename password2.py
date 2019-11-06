@@ -1,0 +1,12 @@
+password = '1024'
+i = 3 #剩餘次數
+while True:
+	pwd = input('請輸入四位數密碼: ')
+	if pwd == password:
+		print('登入成功')
+		break
+	else:
+		i = i - 1
+		print('密碼錯誤 還有', i, '次機會')
+		if i == 0:
+			break
